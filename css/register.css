@@ -1,0 +1,38 @@
+:root{
+    --widthTela: 50vw; 
+}
+.Register{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Register__Caps{
+    width: var(--widthTela);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Register__img{
+    width: 15px;
+    justify-self: end;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 100ms;
+}
+.Register__img:hover{
+    opacity: 0.6;
+}
+
+.Register__Form{
+    width: var(--widthTela);
+    height: 50%;
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+}

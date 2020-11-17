@@ -1,0 +1,77 @@
+:root{
+    --sizeLogo: 60px;
+    --sizeSeach:16px;
+    --defaultColor: rgb(182, 182, 182);
+    --backGround: rgb(226, 226, 226);
+    --HeigthInput: 20px;
+    --HsigthSearch: 22px;
+    --InputWidth: 150px;
+    --BordeRadios: 2vw;
+}
+html{
+    background-color: var(--backGround);
+}
+.HeadShot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--defaultColor);
+    padding:0 30px;
+}
+.HeadShot__Logo{
+    width: var(--sizeLogo);
+    height: var(--sizeLogo);
+}
+.HeadShot__opt{
+    display: flex;
+    align-items: center;
+}
+.HeadShot__opt__text{
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.HeadShot__opt__search{
+    width: var(--sizeSeach);
+}
+.HeadShot__opt__input{
+    border: 2px solid white;
+    border-radius: var(--BordeRadios) 0 0 var(--BordeRadios);
+    height: var(--HeigthInput);
+    width: var(--InputWidth);
+}
+.HeadShot__opt__input:focus{
+    outline: none;
+}
+.HeadShot__opt__search{
+    background-color: white;
+    
+    border-radius: 0 var(--BordeRadios) var(--BordeRadios) 0;
+    border: 3px solid white;
+    height: var(--HeigthInput);
+}
+.HeadShot__opt__burgerDisp{
+    display: none;
+    margin-left: 10px;
+    transition: 10ms;
+}
+.HeadShot__opt__burgerDisp:hover{
+    opacity: 0.6;
+}
+.HeadShot__opt__burgerDisp > div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+     margin: 6px 0;
+}
+@media (max-width:450px){
+    .HeadShot__opt__text,
+    .HeadShot__opt__search,
+    .HeadShot__opt__input{
+        display: none;
+    }
+    
+    .HeadShot__opt__burgerDisp{
+        display: inline;
+    }
+}
